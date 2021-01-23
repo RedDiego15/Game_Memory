@@ -1,3 +1,4 @@
+
 *{
     margin:0;
     padding: 0;
@@ -22,6 +23,7 @@ html{
     background-color: #dedede;
     display: flex;
     height: 100vh;
+    min-width: 440px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -32,6 +34,8 @@ html{
     align-content: center;
     flex-wrap: wrap;
     width: 40rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .3);
+    border-radius: 50%;
     
 }
 
@@ -41,6 +45,7 @@ html{
 .bottom-left{
     width: 20rem;
     height: 20rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
     
 }
 
@@ -67,14 +72,14 @@ html{
     border: none;
     border-bottom: 4px solid #c4c6c7;
     position: absolute;
-    font-size: 4rem;
+    font-size: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--back_title);
     width: 44rem;
     height: 10rem;
-    
+    transition: .5s;
     top: calc(50% - 50px);
     left: calc(50% - 220px);
 }
@@ -82,5 +87,36 @@ html{
     color: #ecf0f1;
     background: #2c3e50;
     border-bottom: 4px solid #1f3346;
-  }
+    letter-spacing: -2px;
+}
+.btn-start:active{
+    transform: scale(.95);
+}
+.colors-container .hide{
+    display: none;
+}
+.ligth{
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+/*
+Sweet alert
+*/
+.swal-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+}
+.swal-overlay .swal-overlay-red {
+    background-color: rgba(255, 64, 64, 0.9);
+}
+.swal-lose__btn-ok{
+    background-color: #000;
+}
+.swal-modal__text{
+    line-height: 2.5rem;
+}
+
+
+
+
+
 

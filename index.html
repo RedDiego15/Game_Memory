@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Game Colors</title>
+    <link rel="stylesheet" href="./style.css">
     <meta
   name="description"           
   content="Game Memory ">
@@ -14,18 +14,18 @@
     <main>
         <section class="game-container">
             <div class="colors-container">
-                <div class="top-left "></div>
-                <div class="top-rigth"></div>
-                <div class="bottom-left"></div> 
-                <div class="bottom-rigth"></div>
+                <div id = "green" class="top-left " data-position="0"></div>
+                <div id = "lemon" class="top-rigth" data-position="1"></div>
+                <div id = "orange"class="bottom-left" data-position="2"></div> 
+                <div id = "melon" class="bottom-rigth" data-position="3"></div>
             
-                <button id="btnEmpezar"class="btn-start"
-                onclick="empezarJuego()">
-                    Empezar a jugar!
+                <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">
+                    Start Play!
                 </button>
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./game.js"></script>
     
 </body>
